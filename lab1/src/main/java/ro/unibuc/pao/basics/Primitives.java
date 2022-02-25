@@ -38,5 +38,7 @@ public class Primitives {
 
     public static void main(String args[]) {
         Primitives p = new Primitives();
+
+        Integer i = p.d;
     }
 }
