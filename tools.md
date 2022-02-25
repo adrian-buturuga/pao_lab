@@ -14,6 +14,11 @@ Used to build and run in a unified way, as well as maintain dependencies.
 
 https://maven.apache.org/download.cgi
 
+### Documentation
+
+* Pom reference: https://maven.apache.org/pom.html
+* Build lifecycle: https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html
+
 ## IDE of choice
 
 IntelliJ Idea Community edition: https://www.jetbrains.com/idea/download/#section=windows (recommended)
@@ -27,3 +32,7 @@ Eclipse: https://www.eclipse.org/downloads/
 If not used as part of an IDE, it will require separate installation
 
 https://git-scm.com/downloads 
+
+### Documentation
+
+* Git command cheat sheet: https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet
