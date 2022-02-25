@@ -9,7 +9,7 @@ public class Instructions {
          * Checks if a condition is true and executes the if body if true, or the else body if false. The else body be
          * left out and nothing will happen if the expression is false. The if expression must be of type boolean.
          */
-        if (1 < 2) {
+        if (1 > 2) {
             System.out.println("My math needs improving");
         } else {
             System.out.println("All is good");
