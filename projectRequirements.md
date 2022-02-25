@@ -1,4 +1,4 @@
-# Programare avansata pe obiecte - proiect 
+# Programare avansata pe obiecte - Project Requirements 
 
 Each student will work on an individual project. It will be presented in stages as detailed below. In order for a project to be graded at any of the stages, it must:
 
