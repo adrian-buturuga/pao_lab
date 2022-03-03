@@ -13,7 +13,7 @@ public class WorkingWithArrays {
     private int[] e, f; // here both e and f are arrays;
 
     /** In java, multi-dimension arrays can be thought of as list of lists of lists of... int. That's because multi-dimensional
-     * arrays are not necessarily regular. One "line" can have 4 "colums" and another one 5 in a bi-dimensional array. Each
+     * arrays are not necessarily regular. One "line" can have 4 "columns" and another one 5 in a bi-dimensional array. Each
      * new dimension needs to instantiated separately. At declaration, dimensions are not defined, but only at instantiation.*/
     private int g[][] = new int[2][];
 
@@ -25,4 +25,8 @@ public class WorkingWithArrays {
     /** arrays can also be instantiated with explicit values at the time of declaration */
     private int h[][] = {{1, 2}, {2, 3}, {4, 5, 6}};
     private int i[][] = new int[][] {{1,2}, {2}, null};
+
+    public static void main(String args[]) {
+
+    }
 }

@@ -4,18 +4,15 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>parent</artifactId>
     <groupId>ro.unibuc.pao</groupId>
+    <artifactId>lab2</artifactId>
     <version>2022-SNAPSHOT</version>
-    <packaging>pom</packaging>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
 
-    <modules>
-        <module>lab1</module>
-        <module>lab2</module>
-    </modules>
+    <dependencies>
+    </dependencies>
 </project>
