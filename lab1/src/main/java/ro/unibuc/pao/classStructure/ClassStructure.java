@@ -25,12 +25,13 @@ public class ClassStructure {
     /** This is a class field member */
     private int a;
 
-    /** */
-    private static int staticField;
+    /** This is a static field member of the class */
+    public static int staticField = 5;
 
     /**
      * This is an instance initialization block. It is run at the creation of each object, for that specific object.
-     * A class can have multiple such blocks and they will be executed in the order that they appear in the class.
+     * A class can have multiple such blocks, and they will be executed in the order that they appear in the class.
+     * CALLED FOR EACH OBJECT CREATED, before the constructor.
      */
     {
         a = 4;
@@ -38,10 +39,17 @@ public class ClassStructure {
 
     /**
      * This a class initialization block. It is run the first time the class is references somewhere. It can only access
-     * static fields and methods in the class.
+     * static fields and methods in the class. If a variable is initialized at definition (see staticField = 5 above)
+     * and gets assigned a new value in this block, since this block is evaluated after declarations (and initializations)
+     * happen, it will override the original value (so staticField will be 4 by the end of the class initialization).
+     * CALLED ONLY ONCE, when the class is referenced the first time (and loaded), even if no object of this time has been
+     * created.
      */
     static {
-        staticField = 3;
+        staticField = 4;
+    }
+
+    public ClassStructure() {
     }
 
     /**
