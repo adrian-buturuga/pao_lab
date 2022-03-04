@@ -27,7 +27,7 @@ public class WorkingWithArrays {
     }
 
     /** arrays can also be instantiated with explicit values at the time of declaration */
-    private int h[][] = {{1, 2}, {2, 3}, {4, 5, 6}};
+    private int h[][] = { {1, 2}, {2, 3}, {4, 5, 6} };
     private int i[][] = new int[][] {{1,2}, {2}, null};
 
     public static void main(String args[]) {

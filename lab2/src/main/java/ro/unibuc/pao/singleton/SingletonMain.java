@@ -10,7 +10,6 @@ public class SingletonMain {
         Singleton2 s2 = Singleton2.getInstance();
         Singleton3 s3 = Singleton3.INSTANCE;
     }
-
 }
 
 class Singleton1 {
@@ -29,12 +28,12 @@ class Singleton1 {
 
 class Singleton2 {
 
-    private static final Singleton2 instance = new Singleton2();
+    private static final Singleton2 INSTANCE = new Singleton2();
 
     private Singleton2() {}
 
     public static Singleton2 getInstance() {
-        return instance;
+        return INSTANCE;
     }
 
 }

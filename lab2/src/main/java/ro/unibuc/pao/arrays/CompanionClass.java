@@ -20,7 +20,7 @@ public class CompanionClass {
         System.out.println("Value was found at index "+position);
 
         // Create a copy the array with a custom size
-        b = Arrays.copyOf(a, a.length+5);
+        b = Arrays.copyOf(a, a.length);
 
         // Displaying array contents
         // Option 1
