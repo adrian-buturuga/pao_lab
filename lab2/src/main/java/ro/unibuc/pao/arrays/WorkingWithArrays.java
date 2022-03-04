@@ -5,8 +5,12 @@ public class WorkingWithArrays {
     /** Arrays can be defined in two ways. First one: */
     private int a[];
 
-    /** Second one: */
+    /** Second one. This is preferred. */
     private int[] b;
+
+    private int j, k[]; // evaluate: WorkingWithArrays.class.getDeclaredField("j").getType()
+
+    private int[] l, m;
 
     /** This allows for better control when declaring multiple variables in one go. */
     private int c[], d; // here c is an array, while d is a simple int
@@ -27,6 +31,6 @@ public class WorkingWithArrays {
     private int i[][] = new int[][] {{1,2}, {2}, null};
 
     public static void main(String args[]) {
-
+        WorkingWithArrays example = new WorkingWithArrays();
     }
 }
