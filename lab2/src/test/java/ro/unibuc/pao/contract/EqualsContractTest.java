@@ -11,9 +11,14 @@ public class EqualsContractTest {
         Dog dog2 = new Dog("Lightning", "Collie", "1234");
         Dog dog3 = new Dog("Lassie", "French bulldog", null);
         Dog dog4 = new Dog("lassie", "border collie", "1234");
+        Dog dog5 = new Dog("Dexter", "Labrador", null);
+        Dog dog6 = new Dog("Dexter", "Labrador", null);
 
         Assertions.assertEquals(dog1, dog2);
         Assertions.assertEquals(dog1, dog4);
         Assertions.assertNotEquals(dog1, dog3);
+        Assertions.assertNotEquals(dog3, dog1);
+        Assertions.assertNotEquals(dog3, dog5);
+        Assertions.assertEquals(dog5, dog6);
     }
 }

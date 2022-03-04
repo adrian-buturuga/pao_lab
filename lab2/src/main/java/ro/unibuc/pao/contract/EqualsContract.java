@@ -1,7 +1,5 @@
 package ro.unibuc.pao.contract;
 
-import java.util.Objects;
-
 public class EqualsContract {
 
     public static void main(String[] args) {
