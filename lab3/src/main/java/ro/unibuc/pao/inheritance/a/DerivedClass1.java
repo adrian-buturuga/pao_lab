@@ -9,6 +9,6 @@ public class DerivedClass1 extends BaseClass {
         this.d = 5; // this is ok, since it's public
 
         this.e = 6; // This works, as e is a public field in the parent.
-        BaseClass.e = 7; // This works, as e is a static field. it can be access with an instance or the class name
+        BaseClass.e = 7; // This works, as e is a static field. it can be accessed with an instance or the class name
     }
 }

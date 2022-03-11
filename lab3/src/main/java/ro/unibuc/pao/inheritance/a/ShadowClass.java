@@ -11,7 +11,13 @@ public class ShadowClass extends BaseClass {
     private void doSomething() {
         b = 3; // this refers to this instance's b field
         this.b = 4; // same as above
-        super.b = 3; // this refers to the parent's b field
+        super.b = 33; // this refers to the parent's b field
         //super.a = 2; // this will not work as "a" is private in the parent class
     }
+
+//    public static void main(String args[]) {
+//        ShadowClass s = new ShadowClass();
+//        s.doSomething();
+//        System.out.println(s.getB());
+//    }
 }
