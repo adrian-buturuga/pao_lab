@@ -15,9 +15,13 @@ public class ShadowClass extends BaseClass {
         //super.a = 2; // this will not work as "a" is private in the parent class
     }
 
-//    public static void main(String args[]) {
-//        ShadowClass s = new ShadowClass();
-//        s.doSomething();
-//        System.out.println(s.getB());
-//    }
+    /**
+     * Methods are called in the context of the class in which they're defined. As a result, the getter getB() will
+     * return the value of b from the super class, where the method is defined and not the shadowing b.
+     */
+    public static void main(String args[]) {
+        ShadowClass s = new ShadowClass();
+        s.doSomething();
+        System.out.println(s.getB());
+    }
 }

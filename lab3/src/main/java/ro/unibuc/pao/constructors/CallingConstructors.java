@@ -24,7 +24,7 @@ class Derived1 extends BaseNoConstructor {
 }
 
 /**
- * Since the parent class has a constructor with arguments (and no no-argcument constructor), this class cannot exist
+ * Since the parent class has a constructor with arguments (and no no-argument constructor), this class cannot exist
  * without a constructor that explicitly calls the parent constructor with the appropriate arguments.
  */
 class Derived2 extends BaseConstructor {

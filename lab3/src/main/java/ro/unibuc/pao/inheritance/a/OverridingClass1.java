@@ -11,3 +11,5 @@ public class OverridingClass1 extends BaseClass {
      * it must be at least public here as well */
 //    protected void method2() { }
 }
+
+// private < default < protected < public

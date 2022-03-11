@@ -6,6 +6,11 @@ package ro.unibuc.pao.inheritance.exercise;
  * possibility to change them later.
  */
 
-public class Bicycle {
+public class Bicycle extends Vehicle {
+
+    public Bicycle() {
+        super(2, 20);
+    }
 
 }
+

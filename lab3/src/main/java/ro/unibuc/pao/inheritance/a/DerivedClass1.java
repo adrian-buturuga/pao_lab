@@ -10,5 +10,10 @@ public class DerivedClass1 extends BaseClass {
 
         this.e = 6; // This works, as e is a public field in the parent.
         BaseClass.e = 7; // This works, as e is a static field. it can be accessed with an instance or the class name
+        DerivedClass1.e = 8; // This works as well.
+    }
+
+    public void somethingNew() {
+        System.out.println("Called new method in DerivedClass1");
     }
 }
