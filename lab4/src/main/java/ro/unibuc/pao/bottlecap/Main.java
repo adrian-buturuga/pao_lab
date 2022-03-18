@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String args[]) {
+        System.out.println("Should use generator for Coca-Cola (true/false)?");
         boolean useCocaCola = new Scanner(System.in).nextBoolean();
 
         /* Based on the paramter passed, the getGenerator method will return one of the two implementations. */
