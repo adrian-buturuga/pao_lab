@@ -3,11 +3,21 @@ package ro.unibuc.pao.lab5.contracts.knownImplementations;
 public class Person {
 
     private String name;
+    private String cnp;
     private int age;
 
-    public Person(String name, int age) {
+    public Person(String name, String cnp, int age) {
         this.name = name;
+        this.cnp = cnp;
         this.age = age;
+    }
+
+    public String getCnp() {
+        return cnp;
+    }
+
+    public void setCnp(String cnp) {
+        this.cnp = cnp;
     }
 
     public String getName() {
@@ -28,6 +38,6 @@ public class Person {
 
     @Override
     public String toString() {
-        return "name: " + name + ",\tage:" + age;
+        return "name: " + name + ",\tage:" + age + ",\tcnp: " + cnp;
     }
 }
