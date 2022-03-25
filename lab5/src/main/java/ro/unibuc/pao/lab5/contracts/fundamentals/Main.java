@@ -1,4 +1,4 @@
-package ro.unibuc.pao.contracts;
+package ro.unibuc.pao.lab5.contracts.fundamentals;
 
 public class Main {
 

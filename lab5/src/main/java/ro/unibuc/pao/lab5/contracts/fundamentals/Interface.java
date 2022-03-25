@@ -1,4 +1,4 @@
-package ro.unibuc.pao.contracts;
+package ro.unibuc.pao.lab5.contracts.fundamentals;
 
 public interface Interface {
 
@@ -24,5 +24,10 @@ public interface Interface {
     default public void sayHello() {
         System.out.println("hello");
     }
+
+    /**
+     * As of java 8, interfaces can also have static methods. Keep in mind that static methods are not inherited.
+     */
+    public static void doSomethingElse() {}
 
 }
