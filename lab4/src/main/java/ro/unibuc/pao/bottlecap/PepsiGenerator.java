@@ -9,6 +9,7 @@ public class PepsiGenerator extends Generator {
 
     private static final int LENGTH = 8;
 
+    @Override
     public int getLength() {
         return LENGTH;
     }

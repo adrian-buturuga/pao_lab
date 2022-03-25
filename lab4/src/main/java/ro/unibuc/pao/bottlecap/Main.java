@@ -8,7 +8,7 @@ public class Main {
         System.out.println("Should use generator for Coca-Cola (true/false)?");
         boolean useCocaCola = new Scanner(System.in).nextBoolean();
 
-        /* Based on the paramter passed, the getGenerator method will return one of the two implementations. */
+        /* Based on the parameter passed, the getGenerator method will return one of the two implementations. */
         Generator g = Generator.getGenerator(useCocaCola);
         /* this will call the implementation from the effective type used. */
         String code = g.generateCode();

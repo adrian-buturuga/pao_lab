@@ -9,6 +9,7 @@ public class CocaColaGenerator extends Generator {
 
     private static final int LENGTH = 20;
 
+    @Override
     public int getLength() {
         return LENGTH;
     }
