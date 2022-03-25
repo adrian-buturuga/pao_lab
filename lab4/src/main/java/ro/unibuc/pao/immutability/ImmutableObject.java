@@ -2,12 +2,16 @@ package ro.unibuc.pao.immutability;
 
 /**
  * To make a class immutable, it must:
- * - ??
- * - ??
- * - ??
- * - ??
+ * - have the class final
+ * - make attributes final [optional]
+ * - not have setters
+ * - have getters return clones of member data
+ * - have constructors retain clones of passes parameters
+ *
+ * Update the definition of the class below so that it is immutable.
+ * Test your solution by running the tests in the ImmutableObjectTest test class.
  */
-public class ImmutableObject {
+public final class ImmutableObject {
 
     private int i;
     private InnerObject innerObject;
@@ -29,9 +33,6 @@ public class ImmutableObject {
         return innerObject;
     }
 
-    public void setInnerObject(InnerObject innerObject) {
-        this.innerObject = innerObject;
-    }
 }
 
 class InnerObject {
