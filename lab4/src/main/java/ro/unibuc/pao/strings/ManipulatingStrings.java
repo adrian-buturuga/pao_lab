@@ -16,10 +16,11 @@ public class ManipulatingStrings {
         String b = new String("something");
 
         /*
-         * Strings can also be manually added to the String pool, by using the .intern() method. Before java 7, String pool was stored in PermGen. Now it's on the heap.
+         * Strings can also be manually added to the String pool, by using the .intern() method.
+         * Before java 7, String pool was stored in PermGen. Now it's on the heap.
          */
         String c = b.intern();
-        System.out.println("Are b and c stored in the same address? " + ( b == c ) );
+        System.out.println("Are b and c stored in the same address? " + (b == c));
 
         /* If we need to alter a lot of strings, we need to use other classes that know how to do this in an optimal manner. */
 
@@ -27,7 +28,7 @@ public class ManipulatingStrings {
         /* This class can manipulate strings rather fast. It is not thread-safe.*/
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append("some").append("thing").reverse();
-        System.out.println("string builder value: "+stringBuilder);
+        System.out.println("string builder value: " + stringBuilder);
 
         /* Example2: StringBuffer */
         /* This class can manipulate strings at a slower pace, but can be used by multiple threads at the same time.
@@ -36,7 +37,7 @@ public class ManipulatingStrings {
          */
         StringBuffer stringBuffer = new StringBuffer();
         stringBuffer.append("some").append("thing").reverse();
-        System.out.println("string buffer value: "+stringBuffer);
+        System.out.println("string buffer value: " + stringBuffer);
     }
 
 }
