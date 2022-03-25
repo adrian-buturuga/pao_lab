@@ -1,4 +1,4 @@
-package ro.unibuc.pao.lab5.contracts.knownImplementations;
+package ro.unibuc.pao.contracts.knownImplementations;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;

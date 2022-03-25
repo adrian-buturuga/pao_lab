@@ -1,4 +1,4 @@
-package ro.unibuc.pao.lab5.contracts.defaultMethod;
+package ro.unibuc.pao.contracts.defaultMethod;
 
 public class Main {
 

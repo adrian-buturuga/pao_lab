@@ -1,4 +1,4 @@
-package ro.unibuc.pao.lab5.contracts.marker;
+package ro.unibuc.pao.contracts.marker;
 
 public abstract class Information {
 

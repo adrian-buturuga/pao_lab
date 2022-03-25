@@ -1,4 +1,4 @@
-package ro.unibuc.pao.lab5.contracts.fundamentals;
+package ro.unibuc.pao.contracts.fundamentals;
 
 /**
  * As of java 9, an interface can have private and/or static methods.

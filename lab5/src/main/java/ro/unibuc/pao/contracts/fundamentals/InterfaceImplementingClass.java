@@ -1,4 +1,4 @@
-package ro.unibuc.pao.lab5.contracts.fundamentals;
+package ro.unibuc.pao.contracts.fundamentals;
 
 /**
  * A class can implement no, one or multiple interfaces

@@ -1,4 +1,4 @@
-package ro.unibuc.pao.lab5.contracts.fundamentals;
+package ro.unibuc.pao.contracts.fundamentals;
 
 /**
  * An interface is not mandatory to have any fields or methods

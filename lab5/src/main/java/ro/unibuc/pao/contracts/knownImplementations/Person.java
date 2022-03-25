@@ -1,4 +1,4 @@
-package ro.unibuc.pao.lab5.contracts.knownImplementations;
+package ro.unibuc.pao.contracts.knownImplementations;
 
 public class Person {
 

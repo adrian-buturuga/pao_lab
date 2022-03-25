@@ -1,4 +1,4 @@
-package ro.unibuc.pao.lab5.contracts.functional;
+package ro.unibuc.pao.contracts.functional;
 
 /**
  * @FunctionalInterface is not mandatory for functional interfaces. However, if present, the compiler will check
