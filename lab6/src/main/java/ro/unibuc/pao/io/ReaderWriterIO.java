@@ -1,4 +1,4 @@
-package ro.unibuc.pao.lab5.io;
+package ro.unibuc.pao.io;
 
 import java.io.*;
 
@@ -15,10 +15,10 @@ public class ReaderWriterIO implements GenericIO {
         /*
          * opening a FileWriter with just the file name will empty the file (any previous content will be deleted).
          * if content needs to be kept and the Writer should write at the end, the constructor with an extra parameter
-         * (for whether or not to append at the end of the file) should be called: new FileWriter("<<filename>>", true);
+         * (telling it whether to append at the end of the file or not) should be called: new FileWriter("<<filename>>", true);
          */
-        writer = new FileWriter("lab5/src/ro/unibuc/pao/lab5/io/files/reader.txt");
-        reader = new FileReader("lab5/src/ro/unibuc/pao/lab5/io/files/reader.txt");
+        writer = new FileWriter("src/main/resources/reader.txt");
+        reader = new FileReader("src/main/resources/reader.txt");
     }
 
     /**

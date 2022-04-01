@@ -1,4 +1,4 @@
-package ro.unibuc.pao.lab5.io;
+package ro.unibuc.pao.io;
 
 import java.io.*;
 import java.util.Scanner;
@@ -11,11 +11,7 @@ public class WorkingWithReaders {
 
     public static void main(String args[]) throws IOException {
 
-
-
-
-
-        try (FileInputStream fis = new FileInputStream("d:/someFile.in");
+        try (FileInputStream fis = new FileInputStream("d:/work/unibuc/pao_lab/lab6/src/main/resources/input.txt");
              DataInputStream dis = new DataInputStream(fis);
              Scanner s = new Scanner(fis)) {
             int number;
@@ -26,7 +22,7 @@ public class WorkingWithReaders {
             }
         } catch (RuntimeException | IOException e) {
             // nope, it's sunny
-            System.out.println(e.getClass().getCanonicalName());
+            System.out.println(e.getClass().getName());
         }
         finally {
             System.out.println("I'm done");

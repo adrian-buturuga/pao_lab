@@ -1,4 +1,4 @@
-package ro.unibuc.pao.lab5.io;
+package ro.unibuc.pao.io;
 
 import java.io.IOException;
 
