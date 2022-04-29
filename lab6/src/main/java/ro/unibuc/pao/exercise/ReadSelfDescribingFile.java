@@ -25,7 +25,11 @@ public class ReadSelfDescribingFile {
 
     public static void main(String[] args) {
         ReadSelfDescribingFile processor = new ReadSelfDescribingFile("exercise");
-        System.out.println(processor.read());
+        if ("1 Little piggy went 2 the true market".equals(processor.read())) {
+            System.out.println("Corect");
+        } else {
+            System.out.println("mai incearca");
+        }
     }
 
 }

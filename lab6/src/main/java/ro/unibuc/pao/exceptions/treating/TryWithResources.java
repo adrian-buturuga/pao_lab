@@ -6,7 +6,12 @@ public class TryWithResources {
 
     public static void main(String[] args) {
 
+        // Try-with-resource keeps track of what was objects were created in its initialization section and automatically
+        // closes them once the try block finishes, regardless if successfully or with an exception. All objects created
+        // after the keyword `try` in this case must implement the interface `AutoCloseable`.
         try (SomeResource res = new SomeResource()) {
+            // in this example, the `doSomething` method will randomly throw an exception. Regardless of that, the `close`
+            // method on the `res` object is called once the block finishes or throws an exception.
             for (int i = 0; i < 20; i++) {
                 res.doSomething();
             }
