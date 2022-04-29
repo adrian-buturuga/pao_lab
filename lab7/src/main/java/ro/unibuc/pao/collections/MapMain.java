@@ -2,7 +2,9 @@ package ro.unibuc.pao.collections;
 
 import ro.unibuc.pao.generics.entities.Book;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
 
 public class MapMain {
 
@@ -15,45 +17,40 @@ public class MapMain {
         // Collections also have immutable implementations! These implementations will not allow inserts or deletes!
         map = Map.of(1, 2, 2, 3, 3, 7);
 
-//        Book book = new Book("DYI guide");
+        Book book = new Book("DYI guide");
 //
-//        // Elements can be added using the .add() method
-//        map.add(2);
-//        map.add(Integer.valueOf(4));
-//        map.add(Integer.valueOf(4));
-//        map.add(Long.valueOf(6));
-//        map.add(book);
+//        // Elements can be added using the .put() method
+        map.put(1, 2);
+        map.put("different-key", Integer.valueOf(4));
+        map.put(new Object(), Integer.valueOf(4));
+        map.put(Long.valueOf(4), Long.valueOf(6));
+        map.put("anything", book);
 
-//        displayCollection(map);
+        displayCollection(map);
 
         // If the elements in the map implement a proper equals contact, the .contains() method can be used to search if
         // a specific element is present in the collection
-//        if (map.contains(book)) {
+        if (map.containsKey(book)) {
 //
 //            // Elements can be removed, based on the result of the equals contract!
-//            map.remove(book);
-//        }
-
-//        displayCollection(map);
-
-        // There is also a possibility to delete by index. Be very careful when the map contains numbers castable to int!
-//        map.remove(2);
+            map.remove(book);
+        }
 
 //        displayCollection(map);
 
     }
 
-    private static void displayCollection(Collection c) {
-        Iterator i = c.iterator();
+    private static void displayCollection(Map c) {
+        Iterator i = c.keySet().iterator();
         if (c.isEmpty()) {
-            System.out.println(c.getClass().getName()+" is empty");
+            System.out.println(c.getClass().getName() + " is empty");
             return;
         }
 
         System.out.println(c.getClass().getName() + " has " + c.size() + " elements");
         while (i.hasNext()) {
-            Object o = i.next();
-            System.out.println(o);
+            Object key = i.next();
+            System.out.println(key + " -> " + c.get(key));
         }
     }
 

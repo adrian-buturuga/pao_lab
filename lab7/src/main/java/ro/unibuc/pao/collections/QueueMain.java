@@ -10,7 +10,7 @@ public class QueueMain {
     public static void main(String[] args) {
 
         // There are multiple implementations of each collection, so it's good practice to use polymorphism as much as possible
-        // Examples of types of queue: PriorityQueue, ArrayDeck
+        // Examples of types of queue: PriorityQueue, ArrayDeque
         Queue queue = new ArrayDeque();
 
         // Elements can be added using the .add() method

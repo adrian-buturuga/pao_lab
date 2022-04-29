@@ -2,10 +2,7 @@ package ro.unibuc.pao.collections;
 
 import ro.unibuc.pao.generics.entities.Book;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 public class ListMain {
 
@@ -13,7 +10,7 @@ public class ListMain {
 
         // There are multiple implementations of each collection, so it's good practice to use polymorphism as much as possible
         // Examples of types of list: ArrayList, LinkedList, SortedList, Stack, Vector.
-        List list = new ArrayList();
+        List<Number> list = new LinkedList<>();
 
         // Collections also have immutable implementations! These implementations will not allow inserts or deletes!
 //        list = List.of(4, 6);
@@ -22,10 +19,11 @@ public class ListMain {
 
         // Elements can be added using the .add() method
         list.add(2);
-        list.add(Integer.valueOf(4));
-        list.add(Integer.valueOf(4));
-        list.add(Long.valueOf(6));
-        list.add(book);
+        list.add(4);
+        list.add(4);
+//        list.add(Long.valueOf(6));
+//        list.add(book);
+        list.add(null);
 
         displayCollection(list);
 
@@ -47,7 +45,7 @@ public class ListMain {
     }
 
     private static void displayCollection(Collection c) {
-        Iterator i = c.iterator();
+        Iterator<Integer> i = c.iterator();
         if (c.isEmpty()) {
             System.out.println(c.getClass().getName()+" is empty");
             return;
@@ -55,7 +53,8 @@ public class ListMain {
 
         System.out.println(c.getClass().getName() + " has " + c.size() + " elements");
         while (i.hasNext()) {
-            Object o = i.next();
+            // Since the iterator was declared using generics, the .next() method will return Integer instead of Object
+            Integer o = i.next();
             System.out.println(o);
         }
     }

@@ -1,5 +1,6 @@
 package ro.unibuc.pao.generics;
 
+import ro.unibuc.pao.generics.entities.Book;
 import ro.unibuc.pao.generics.entities.Storable;
 
 import java.util.ArrayList;
@@ -7,9 +8,9 @@ import java.util.List;
 
 public class Storage {
 
-    private List<Storable> storage = new ArrayList<Storable>();
+    private List<Book> storage = new ArrayList<Book>();
 
-    public void add(Storable item) {
+    public void add(Book item) {
         storage.add(item);
     }
 

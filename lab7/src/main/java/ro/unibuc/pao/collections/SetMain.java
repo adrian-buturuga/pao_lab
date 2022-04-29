@@ -18,11 +18,12 @@ public class SetMain {
         Book book = new Book("DYI guide");
 
         // Elements can be added using the .add() method
-        set.add(2);
-        set.add(Integer.valueOf(4));
-        set.add(Integer.valueOf(4));
         set.add(Long.valueOf(6));
+        set.add(null);
+        set.add(Integer.valueOf(4));
+        set.add(2);
         set.add(book);
+        set.add(Integer.valueOf(4));
 
         displayCollection(set);
 
@@ -36,14 +37,14 @@ public class SetMain {
 
         displayCollection(set);
 
-        // There is also a possibility to delete by index. Be very careful when the set contains numbers castable to int!
+        // Remove can only be done by object
         set.remove(2);
 
         displayCollection(set);
 
     }
 
-    private static void displayCollection(Collection c) {
+    private static void displayCollection(Set c) {
         Iterator i = c.iterator();
         if (c.isEmpty()) {
             System.out.println(c.getClass().getName()+" is empty");
