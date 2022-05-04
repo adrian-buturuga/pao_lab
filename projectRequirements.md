@@ -36,7 +36,7 @@ The application will:
 Extend the project from the 1st stage by persisting the data using files:
 
 * CSV files will be used to store at least 4 types of objects from the first stage. Each column in the file is separated with a comma. Example: `name,surname,age`
-* Generic singleton services will be created for reading and writing from/to files
+* Generic (not in the context of java generics) singleton services will be created for reading and writing from/to files
 * At system startup, the data will be automatically loaded from the files.
 
 ### Auditing
