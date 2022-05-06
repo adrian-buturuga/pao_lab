@@ -58,7 +58,7 @@ A service will be created that will expose create/read/update/delete operations 
 3) medical office scheduling system (client, medic, appointment)
 4) store produce management (category, produce, distributors)
 5) banking application (accounts,bank statements, transactions, cards, services)
-6) e-learning platform (courses, users, applications, quizez)
+6) e-learning platform (courses, users, applications, quizes)
 7) auctioning system (auction, bids, items, users)
 8) food delivery platform (venues, orders, deliveries, users)
 9) book lending system (partners, users, books)

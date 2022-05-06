@@ -10,13 +10,12 @@ import javafx.stage.Stage;
 import ro.unibuc.pao.javafx.tabs.ReservationTabs;
 import ro.unibuc.pao.javafx.tabs.ShowTabs;
 
-public class MainApp extends Application {
+public class ReservationApp extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
         setStageParams(stage);
         Scene scene = createMainScene(stage);
-
         stage.show();
     }
 
@@ -29,16 +28,17 @@ public class MainApp extends Application {
         TabPane tabs = new TabPane();
 
         tabs.getTabs().add(new ShowTabs());
-
         tabs.getTabs().add(new ReservationTabs());
 
         Tab offers = new Tab("Offers");
         offers.setContent(new Label("something yet again"));
         offers.setClosable(false);
         tabs.getTabs().add(offers);
+
         Scene scene = new Scene(tabs, 600, 450);
         scene.setFill(Color.ALICEBLUE);
         stage.setScene(scene);
+
         return scene;
     }
 
