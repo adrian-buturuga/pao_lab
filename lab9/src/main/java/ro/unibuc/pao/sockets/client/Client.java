@@ -9,24 +9,28 @@ public class Client {
 
     private Socket socket;
     private BufferedReader confirmations;
+    private int number;
+
+    public Client(int number) {
+        this.number = number;
+    }
 
     public void connect(String host, int port) throws IOException {
         socket = new Socket(host, port);
         confirmations = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-        System.out.println("Connected");
+        System.out.println(number+" Connected");
     }
 
     public void sendMessage(String message) throws IOException {
-        System.out.println("-> " + message);
+        System.out.println(number + " -> " + message);
         socket.getOutputStream().write((message + "\n").getBytes());
-        System.out.println("<- " + confirmations.readLine());
+        System.out.println(number + " <- " + confirmations.readLine());
     }
 
     public void disconnect() throws IOException {
         sendMessage("exit");
         socket.close();
         confirmations.close();
-        System.exit(0);
     }
 
 }

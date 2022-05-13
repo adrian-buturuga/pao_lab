@@ -7,6 +7,7 @@ import java.nio.channels.SelectionKey;
 import java.nio.channels.Selector;
 import java.nio.channels.ServerSocketChannel;
 import java.nio.channels.SocketChannel;
+import java.util.Iterator;
 import java.util.Set;
 
 public class NioServer {
@@ -23,7 +24,9 @@ public class NioServer {
         while (true) {
             selector.select();
             Set<SelectionKey> keys = selector.selectedKeys();
-            for (SelectionKey key : keys) {
+            Iterator<SelectionKey> iterator = keys.iterator();
+            while (iterator.hasNext()) {
+                SelectionKey key = iterator.next();
                 if (key.isAcceptable()) {
                     SocketChannel client = socket.accept();
                     client.configureBlocking(false);
@@ -41,12 +44,10 @@ public class NioServer {
                         System.out.println("Closing client");
                         client.close();
                         socket.close();
-                        selector.close();
-                        System.exit(0);
                     }
                 }
-                keys.remove(key);
             }
+            keys.removeAll(keys);
         }
     }
 }
