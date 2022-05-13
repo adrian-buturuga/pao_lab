@@ -38,6 +38,7 @@ public class ShowTabs extends AbstractAppTab {
 
     private void displayContent() {
         VBox contentBox = new VBox();
+
         contentBox.setPadding(new Insets(20, 40, 20, 40));
 
         for (Pair<String, LocalDateTime> show : content) {

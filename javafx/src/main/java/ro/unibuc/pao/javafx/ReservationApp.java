@@ -13,9 +13,9 @@ import ro.unibuc.pao.javafx.tabs.ShowTabs;
 public class ReservationApp extends Application {
 
     @Override
-    public void start(Stage stage) throws Exception {
+    public void start(Stage stage) {
         setStageParams(stage);
-        Scene scene = createMainScene(stage);
+        createMainScene(stage);
         stage.show();
     }
 
@@ -42,7 +42,7 @@ public class ReservationApp extends Application {
         return scene;
     }
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         launch(args);
     }
 }
