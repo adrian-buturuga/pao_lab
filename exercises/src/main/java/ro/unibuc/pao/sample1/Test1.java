@@ -25,11 +25,16 @@ class Automobil {
 
 public class Test1 {
     public static void main(String[] args) {
+
+        String a = new String("bla");
+        a = "b";
+
+
         HashSet<Automobil> la = new HashSet<>();
         la.add(new Automobil("Audi"));
         la.add(new Automobil("BMW"));
         la.add(new Automobil("Audi"));
-        la.add(new Automobil("Open"));
+        la.add(new Automobil("Opel"));
         System.out.println(la.size());
     }
 
